@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# legacy files
+index.html
+PROJECT_ANALYSIS.html
+PROJECT_ANALYSIS.md
+images/

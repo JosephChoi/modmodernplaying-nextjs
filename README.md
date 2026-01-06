@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MODERN PLAYING - Next.js 마이그레이션 프로젝트
 
-## Getting Started
+현대인의 굳은 몸과 눌린 감정을 놀이처럼 움직이며 풀어내는 공간, 모던플레잉의 공식 웹사이트입니다.
 
-First, run the development server:
+## 기술 스택
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Backend**: Google Apps Script + Google Sheets
+- **Deployment**: Vercel (권장)
+
+## 프로젝트 구조
+
+```
+modernplaying-nextjs/
+├── app/
+│   ├── components/
+│   │   ├── layout/          # Navbar, Footer, KakaoChatButton
+│   │   ├── sections/        # Hero, Philosophy, Stretching, Dance, Benefits, Instructors, ContactForm
+│   │   ├── forms/           # ConsultationForm
+│   │   └── ui/              # ImageGallery, MembershipCard, CountdownTimer, Modal
+│   ├── layout.tsx           # 루트 레이아웃
+│   ├── page.tsx             # 메인 페이지
+│   └── globals.css          # 전역 스타일
+├── lib/
+│   ├── google/              # Google Apps Script 연동
+│   └── types/               # TypeScript 타입 정의
+├── public/
+│   └── images/              # 이미지 파일들
+└── google-apps-script/      # Apps Script 코드 (참고용)
+```
+
+## 시작하기
+
+### 1. 의존성 설치
+
+```bash
+npm install
+```
+
+### 2. 환경 변수 설정
+
+`.env.local` 파일을 생성하고 다음 변수를 설정하세요:
+
+```env
+NEXT_PUBLIC_APPS_SCRIPT_URL=your_google_apps_script_url
+ADMIN_EMAIL=admin@modernplaying.com
+```
+
+### 3. 개발 서버 실행
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Google Apps Script 설정
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+자세한 설정 가이드는 [`doc/GOOGLE_SHEETS_SETUP.md`](./doc/GOOGLE_SHEETS_SETUP.md)를 참고하세요.
 
-## Learn More
+간단 요약:
+1. Google Drive에서 새 스프레드시트를 생성합니다.
+2. 스프레드시트의 확장 프로그램 > Apps Script를 엽니다.
+3. `google-apps-script/consultation-handler.gs` 파일의 내용을 복사하여 붙여넣습니다.
+4. 스크립트에서 `YOUR_SPREADSHEET_ID`를 실제 스프레드시트 ID로 변경합니다.
+5. `doPost` 함수를 배포합니다 (배포 > 새 배포 > 웹 앱으로 설정).
+6. 배포된 웹 앱 URL을 `.env.local`의 `NEXT_PUBLIC_APPS_SCRIPT_URL`에 설정합니다.
 
-To learn more about Next.js, take a look at the following resources:
+## 배포
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Vercel 배포
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. [Vercel](https://vercel.com)에 프로젝트를 연결합니다.
+2. 환경 변수를 설정합니다.
+3. 배포가 자동으로 진행됩니다.
 
-## Deploy on Vercel
+### 기타 플랫폼
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 주요 기능
+
+- ✅ 반응형 디자인 (모바일, 태블릿, 데스크톱)
+- ✅ Google Sheets를 통한 상담 신청 데이터 수집
+- ✅ 관리자 및 신청자 이메일 자동 발송
+- ✅ 카카오톡 플로팅 버튼 연동
+- ✅ 실시간 카운트다운 타이머
+- ✅ 이미지 갤러리
+- ✅ 멤버십 플랜 표시
+
+## 디자인 보존
+
+원본 사이트의 디자인을 최대한 보존했습니다:
+
+- Tailwind 커스텀 컬러 팔레트
+- Pretendard 폰트
+- Font Awesome 아이콘
+- 모든 이미지 파일
+- 애니메이션 및 호버 효과
+
+## 라이선스
+
+Copyright © MODERN PLAYING. All Rights Reserved.
