@@ -44,4 +44,4 @@ next-env.d.ts
 index.html
 PROJECT_ANALYSIS.html
 PROJECT_ANALYSIS.md
-images/
+/images/
