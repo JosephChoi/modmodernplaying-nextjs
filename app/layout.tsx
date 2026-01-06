@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -6,6 +6,7 @@ import KakaoChatButton from './components/layout/KakaoChatButton';
 import StickyCountdown from './components/layout/StickyCountdown';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://modmodernplaying.vercel.app'),
   title: 'MODERN PLAYING | Movement as Play',
   description:
     '모던플레잉은 현대인의 굳은 몸과 눌린 감정을 놀이처럼 움직이며 풀어내는 공간입니다.',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'MODERN PLAYING',
     images: [
       {
-        url: 'https://modmodernplaying.vercel.app/images/stretching-main.jpg',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MODERN PLAYING - Movement as Play',
@@ -31,17 +32,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MODERN PLAYING | Movement as Play',
     description: '모던플레잉은 현대인의 굳은 몸과 눌린 감정을 놀이처럼 움직이며 풀어내는 공간입니다.',
-    images: ['https://modmodernplaying.vercel.app/images/stretching-main.jpg'],
+    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

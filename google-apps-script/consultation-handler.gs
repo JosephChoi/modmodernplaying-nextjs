@@ -207,15 +207,15 @@ function sendAdminEmail(data) {
   
   adminEmails.forEach(function(email) {
     try {
-      GmailApp.sendEmail(
+  GmailApp.sendEmail(
         email,
-        subject,
-        "새로운 상담신청이 접수되었습니다.",
-        {
-          htmlBody: htmlBody,
-          name: "모던플레잉 상담신청 시스템"
-        }
-      );
+    subject,
+    "새로운 상담신청이 접수되었습니다.",
+    {
+      htmlBody: htmlBody,
+      name: "모던플레잉 상담신청 시스템"
+    }
+  );
       successCount++;
       Logger.log("이메일 발송 성공: " + email);
     } catch (error) {
