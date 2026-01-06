@@ -41,6 +41,24 @@ body {
     font-feature-settings: "tnum";
     font-variant-numeric: tabular-nums;
   }
+
+  /* Hide scrollbar for gallery */
+  .hide-scrollbar,
+  .gallery-scroll {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+    touch-action: pan-x; /* Enable horizontal panning */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar,
+  .gallery-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .gallery-scroll {
+    overscroll-behavior-x: contain; /* Prevent scroll chaining */
+  }
 }
 
 @keyframes shine {

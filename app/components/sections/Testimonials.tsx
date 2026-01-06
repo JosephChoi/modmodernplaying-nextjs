@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Testimonials() {
   const testimonials = [
     {
@@ -99,13 +97,12 @@ export default function Testimonials() {
                 }}
               ></p>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-stone-200 overflow-hidden">
-                  <Image
+                <div className="w-8 h-8 rounded-full bg-stone-200 overflow-hidden flex-shrink-0">
+                  <img
                     src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${testimonial.avatar}`}
                     alt={testimonial.author}
-                    width={32}
-                    height={32}
-                    className="w-full h-full"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <span className="text-stone-400 text-xs tracking-wide">{testimonial.author}</span>

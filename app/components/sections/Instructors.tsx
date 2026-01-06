@@ -29,7 +29,7 @@ export default function Instructors() {
       title: '마스터',
       image: '/images/teacher-choihyeseung.jpg',
       qualifications: [
-        '세종대학교 무용학과 예술대학원 재학',
+        '세종대 무용학과 예술대학원 재학',
         '경북대 체육교육학 전공 졸업',
       ],
     },
@@ -70,7 +70,12 @@ export default function Instructors() {
                     alt={instructor.name}
                     width={192}
                     height={192}
-                    className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                    className={`w-full h-full transition duration-500 group-hover:scale-110 object-cover ${
+                      instructor.isRepresentative ? '' : 'scale-110'
+                    }`}
+                    style={!instructor.isRepresentative ? { 
+                      objectPosition: 'center top'
+                    } : undefined}
                   />
                 </div>
                 {instructor.isRepresentative && (
@@ -84,7 +89,12 @@ export default function Instructors() {
                 <span className="text-sm font-normal text-stone-500">{instructor.title}</span>
               </h3>
               <div className="w-8 h-0.5 bg-stone-200 mx-auto my-4"></div>
-              <ul className="text-left text-xs text-stone-600 space-y-2 px-2 break-keep leading-relaxed">
+              <ul className={`text-left text-xs text-stone-600 space-y-2 break-keep leading-relaxed ${
+                instructor.isRepresentative ? 'px-2' : 'px-0'
+              }`} style={!instructor.isRepresentative ? { 
+                maxWidth: '192px', 
+                margin: '0 auto' 
+              } : undefined}>
                 {instructor.qualifications.map((qual, idx) => (
                   <li key={idx} className="flex items-start">
                     <i className="fas fa-check text-stone-400 mt-0.5 mr-2 flex-shrink-0"></i>

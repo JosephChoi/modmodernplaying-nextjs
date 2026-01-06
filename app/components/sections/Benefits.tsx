@@ -13,7 +13,7 @@ export default function Benefits() {
             <span className="w-2 h-2 rounded-full bg-brandRed"></span>
             <span className="text-brandRed text-xs font-bold tracking-widest uppercase">
               선착순 100명 Only
-            </span>
+          </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg tracking-tight">
             오픈 멤버 한정 혜택
@@ -186,140 +186,140 @@ export default function Benefits() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            {/* Receipt 1: Stretching */}
-            <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform hover:-translate-y-2 transition duration-300 group">
-              <div className="h-2 bg-royalPurple"></div>
-              <div className="p-6">
-                <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
+          {/* Receipt 1: Stretching */}
+          <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform hover:-translate-y-2 transition duration-300 group">
+            <div className="h-2 bg-royalPurple"></div>
+            <div className="p-6">
+              <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
                   <h4 className="font-black text-xl text-stone-900 tracking-tight">액티브 스트레칭</h4>
-                  <span className="text-[10px] font-bold tracking-widest bg-stone-100 text-stone-500 px-2 py-1 rounded mt-1 inline-block uppercase">
-                    3 Months Plan
-                  </span>
+                <span className="text-[10px] font-bold tracking-widest bg-stone-100 text-stone-500 px-2 py-1 rounded mt-1 inline-block uppercase">
+                  3 Months Plan
+                </span>
+              </div>
+              <div className="space-y-3 text-sm mb-6 font-medium">
+                <div className="flex justify-between text-stone-400">
+                  <span>정상가</span>
+                  <span className="line-through decoration-stone-300">720,000원</span>
                 </div>
-                <div className="space-y-3 text-sm mb-6 font-medium">
-                  <div className="flex justify-between text-stone-400">
-                    <span>정상가</span>
-                    <span className="line-through decoration-stone-300">720,000원</span>
-                  </div>
-                  <div className="flex justify-between text-stone-800">
-                    <span>멤버십 할인가 (12%)</span>
-                    <span>633,600원</span>
-                  </div>
-                  <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
-                    <span>🔥 오픈 프로모션</span>
-                    <span>- 50,000원</span>
-                  </div>
-                  <div className="flex justify-between text-royalPurple bg-royalPurple/5 px-2 py-1 rounded -mx-2">
-                    <span>💰 체험 페이백</span>
-                    <span>- 29,700원</span>
-                  </div>
+                <div className="flex justify-between text-stone-800">
+                  <span>멤버십 할인가 (12%)</span>
+                  <span>633,600원</span>
                 </div>
-                <div className="border-t-2 border-stone-900 pt-4 mt-2">
-                  <div className="flex justify-between items-end">
-                    <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
-                    <div className="text-right">
-                      <span className="block text-3xl font-black text-royalPurple tracking-tighter">
-                        553,900<span className="text-base font-bold text-stone-800 ml-1">원</span>
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-right text-sm text-stone-400 mt-2">
-                    월 18만원대 (정상가 대비 -16.6만원)
-                  </p>
+                <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
+                  <span>🔥 오픈 프로모션</span>
+                  <span>- 50,000원</span>
+                </div>
+                <div className="flex justify-between text-royalPurple bg-royalPurple/5 px-2 py-1 rounded -mx-2">
+                  <span>💰 체험 페이백</span>
+                  <span>- 29,700원</span>
                 </div>
               </div>
-              <div className="bg-stone-50 p-3 text-center border-t border-stone-100">
-                <span className="text-[10px] text-stone-400">VAT 포함 | 무이자 할부 지원</span>
+              <div className="border-t-2 border-stone-900 pt-4 mt-2">
+                <div className="flex justify-between items-end">
+                  <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
+                  <div className="text-right">
+                    <span className="block text-3xl font-black text-royalPurple tracking-tighter">
+                      553,900<span className="text-base font-bold text-stone-800 ml-1">원</span>
+                    </span>
+                  </div>
+                </div>
+                <p className="text-right text-sm text-stone-400 mt-2">
+                  월 18만원대 (정상가 대비 -16.6만원)
+                </p>
               </div>
             </div>
+            <div className="bg-stone-50 p-3 text-center border-t border-stone-100">
+              <span className="text-[10px] text-stone-400">VAT 포함 | 무이자 할부 지원</span>
+            </div>
+          </div>
 
-            {/* Receipt 2: Dance */}
-            <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform hover:-translate-y-2 transition duration-300 group">
-              <div className="h-2 bg-mutedSage"></div>
-              <div className="p-6">
-                <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
-                  <h4 className="font-black text-xl text-stone-900 tracking-tight">취미 현대무용</h4>
-                  <span className="text-[10px] font-bold tracking-widest bg-stone-100 text-stone-500 px-2 py-1 rounded mt-1 inline-block uppercase">
-                    3 Months Plan
-                  </span>
+          {/* Receipt 2: Dance */}
+          <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform hover:-translate-y-2 transition duration-300 group">
+            <div className="h-2 bg-mutedSage"></div>
+            <div className="p-6">
+              <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
+                <h4 className="font-black text-xl text-stone-900 tracking-tight">취미 현대무용</h4>
+                <span className="text-[10px] font-bold tracking-widest bg-stone-100 text-stone-500 px-2 py-1 rounded mt-1 inline-block uppercase">
+                  3 Months Plan
+                </span>
+              </div>
+              <div className="space-y-3 text-sm mb-6 font-medium">
+                <div className="flex justify-between text-stone-400">
+                  <span>정상가</span>
+                  <span className="line-through decoration-stone-300">480,000원</span>
                 </div>
-                <div className="space-y-3 text-sm mb-6 font-medium">
-                  <div className="flex justify-between text-stone-400">
-                    <span>정상가</span>
-                    <span className="line-through decoration-stone-300">480,000원</span>
-                  </div>
-                  <div className="flex justify-between text-stone-800">
-                    <span>멤버십 할인가 (12%)</span>
-                    <span>422,400원</span>
-                  </div>
-                  <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
-                    <span>🔥 오픈 프로모션</span>
-                    <span>- 50,000원</span>
-                  </div>
-                  <div className="flex justify-between text-mutedSage bg-mutedSage/10 px-2 py-1 rounded -mx-2">
-                    <span>💰 체험 페이백</span>
-                    <span>- 19,900원</span>
-                  </div>
+                <div className="flex justify-between text-stone-800">
+                  <span>멤버십 할인가 (12%)</span>
+                  <span>422,400원</span>
                 </div>
-                <div className="border-t-2 border-stone-900 pt-4 mt-2">
-                  <div className="flex justify-between items-end">
-                    <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
-                    <div className="text-right">
-                      <span className="block text-3xl font-black text-mutedSage tracking-tighter">
-                        352,500<span className="text-base font-bold text-stone-800 ml-1">원</span>
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-right text-sm text-stone-400 mt-2">
-                    월 11만원대 (정상가 대비 -12.7만원)
-                  </p>
+                <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
+                  <span>🔥 오픈 프로모션</span>
+                  <span>- 50,000원</span>
+                </div>
+                <div className="flex justify-between text-mutedSage bg-mutedSage/10 px-2 py-1 rounded -mx-2">
+                  <span>💰 체험 페이백</span>
+                  <span>- 19,900원</span>
                 </div>
               </div>
-              <div className="bg-stone-50 p-3 text-center border-t border-stone-100">
-                <span className="text-[10px] text-stone-400">VAT 포함 | 무이자 할부 지원</span>
+              <div className="border-t-2 border-stone-900 pt-4 mt-2">
+                <div className="flex justify-between items-end">
+                  <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
+                  <div className="text-right">
+                    <span className="block text-3xl font-black text-mutedSage tracking-tighter">
+                      352,500<span className="text-base font-bold text-stone-800 ml-1">원</span>
+                    </span>
+                  </div>
+                </div>
+                <p className="text-right text-sm text-stone-400 mt-2">
+                  월 11만원대 (정상가 대비 -12.7만원)
+                </p>
               </div>
             </div>
+            <div className="bg-stone-50 p-3 text-center border-t border-stone-100">
+              <span className="text-[10px] text-stone-400">VAT 포함 | 무이자 할부 지원</span>
+            </div>
+          </div>
 
-            {/* Receipt 3: Synergy */}
-            <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform md:scale-105 z-10 border-4 border-classicGold/30">
-              <div className="absolute top-0 right-0 bg-brandRed text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg shadow-sm">
-                추천
+          {/* Receipt 3: Synergy */}
+          <div className="bg-white text-stone-800 rounded-2xl shadow-2xl overflow-hidden relative transform md:scale-105 z-10 border-4 border-classicGold/30">
+            <div className="absolute top-0 right-0 bg-brandRed text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg shadow-sm">
+              추천
+            </div>
+            <div className="h-2 bg-gradient-to-r from-royalPurple to-mutedSage"></div>
+            <div className="p-6">
+              <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
+                <h4 className="font-black text-lg text-stone-900 tracking-tight">
+                  현대무용 + 스트레칭 Add on
+                </h4>
+                <span className="text-[10px] font-bold tracking-widest bg-stone-900 text-white px-2 py-1 rounded mt-1 inline-block uppercase">
+                  3 Months Perfect
+                </span>
               </div>
-              <div className="h-2 bg-gradient-to-r from-royalPurple to-mutedSage"></div>
-              <div className="p-6">
-                <div className="text-center border-b-2 border-dashed border-stone-200 pb-4 mb-4">
-                  <h4 className="font-black text-lg text-stone-900 tracking-tight">
-                    현대무용 + 스트레칭 Add on
-                  </h4>
-                  <span className="text-[10px] font-bold tracking-widest bg-stone-900 text-white px-2 py-1 rounded mt-1 inline-block uppercase">
-                    3 Months Perfect
-                  </span>
+              <div className="space-y-3 text-sm mb-6 font-medium">
+                <div className="flex justify-between text-stone-400">
+                  <span>총 정상가</span>
+                  <span className="line-through decoration-stone-300">1,020,000원</span>
                 </div>
-                <div className="space-y-3 text-sm mb-6 font-medium">
-                  <div className="flex justify-between text-stone-400">
-                    <span>총 정상가</span>
-                    <span className="line-through decoration-stone-300">1,020,000원</span>
-                  </div>
-                  <div className="flex justify-between text-stone-800">
-                    <span>결합 할인가</span>
-                    <span>818,400원</span>
-                  </div>
-                  <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
-                    <span>🔥 오픈 프로모션</span>
-                    <span>- 50,000원</span>
-                  </div>
-                  <div className="flex justify-between text-stone-600 bg-stone-100 px-2 py-1 rounded -mx-2">
-                    <span>💰 통합 체험 페이백</span>
+                <div className="flex justify-between text-stone-800">
+                  <span>결합 할인가</span>
+                  <span>818,400원</span>
+                </div>
+                <div className="flex justify-between text-brandRed bg-brandRed/5 px-2 py-1 rounded -mx-2">
+                  <span>🔥 오픈 프로모션</span>
+                  <span>- 50,000원</span>
+                </div>
+                <div className="flex justify-between text-stone-600 bg-stone-100 px-2 py-1 rounded -mx-2">
+                  <span>💰 통합 체험 페이백</span>
                     <span>- 44,900원</span>
-                  </div>
                 </div>
-                <div className="border-t-2 border-stone-900 pt-4 mt-2">
-                  <div className="flex justify-between items-end">
-                    <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
-                    <div className="text-right">
+              </div>
+              <div className="border-t-2 border-stone-900 pt-4 mt-2">
+                <div className="flex justify-between items-end">
+                  <span className="font-bold text-stone-900 text-lg">최종 결제액</span>
+                  <div className="text-right">
                       <span className="block text-4xl font-black text-classicGold tracking-tighter">
                         723,500<span className="text-base font-bold text-stone-800 ml-1">원</span>
-                      </span>
+                    </span>
                     </div>
                   </div>
                   <p className="text-right text-sm text-royalPurple font-bold mt-2">

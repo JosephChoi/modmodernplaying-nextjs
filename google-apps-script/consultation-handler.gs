@@ -202,6 +202,9 @@ function sendAdminEmail(data) {
   `;
 
   // 모든 관리자에게 이메일 발송
+  var successCount = 0;
+  var failCount = 0;
+  
   adminEmails.forEach(function(email) {
     try {
       GmailApp.sendEmail(
@@ -213,9 +216,15 @@ function sendAdminEmail(data) {
           name: "모던플레잉 상담신청 시스템"
         }
       );
+      successCount++;
+      Logger.log("이메일 발송 성공: " + email);
     } catch (error) {
+      failCount++;
       Logger.log("이메일 발송 실패 (" + email + "): " + error.toString());
+      // 실패한 경우에도 계속 진행
     }
   });
+  
+  Logger.log("총 " + adminEmails.length + "명 중 " + successCount + "명에게 이메일 발송 완료, " + failCount + "명 실패");
 }
 

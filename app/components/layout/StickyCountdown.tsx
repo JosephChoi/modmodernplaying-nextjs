@@ -7,7 +7,7 @@ export default function StickyCountdown() {
     <div className="fixed bottom-0 left-0 w-full bg-[#111] border-t border-royalPurple/30 shadow-[0_-10px_40px_rgba(0,0,0,0.4)] z-50 px-4 py-3 md:py-3">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
         {/* Left: Text & Timer */}
-        <div className="w-full md:w-auto flex items-center justify-between md:justify-start gap-4">
+        <div className="w-full md:w-auto flex flex-col md:flex-row items-start md:items-center justify-between md:justify-start gap-3 md:gap-4">
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5 mb-0.5">
               <span className="relative flex h-2.5 w-2.5">
@@ -26,13 +26,13 @@ export default function StickyCountdown() {
 
           <div className="h-8 w-px bg-white/10 hidden md:block mx-2"></div>
 
-          <div className="flex items-end gap-1.5 font-mono-nums leading-none">
+          <div className="flex items-end gap-1.5 font-mono-nums leading-none w-full md:w-auto justify-center md:justify-start">
             <CountdownTimer />
           </div>
         </div>
 
         {/* Right: Button */}
-        <div className="w-full md:w-auto flex gap-2 justify-end">
+        <div className="w-full md:w-auto flex gap-2 justify-center md:justify-end">
           <a
             href="#contact"
             className="w-full md:w-auto bg-gradient-to-r from-royalPurple to-brandRed text-white py-3.5 px-8 rounded-xl font-bold text-base hover:from-indigo-600 hover:to-royalPurple transition-all duration-300 shadow-lg shadow-brandRed/20 hover:shadow-brandRed/40 hover:-translate-y-0.5 flex items-center justify-center gap-2 group"

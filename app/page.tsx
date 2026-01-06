@@ -1,5 +1,6 @@
 import Hero from './components/sections/Hero';
 import Philosophy from './components/sections/Philosophy';
+import WhyModernplaying from './components/sections/WhyModernplaying';
 import Stretching from './components/sections/Stretching';
 import Dance from './components/sections/Dance';
 import Synergy from './components/sections/Synergy';
@@ -21,6 +22,7 @@ export default function Home() {
       <Schedule />
       <Benefits />
       <Trial />
+      <WhyModernplaying />
       <Testimonials />
       <Instructors />
       <ContactForm />
